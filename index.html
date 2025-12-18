@@ -99,8 +99,67 @@
         <p>Kami menghormati privasi Anda. Data pribadi yang Anda berikan hanya digunakan untuk keperluan komunikasi terkait pembuatan website dan tidak akan dibagikan kepada pihak ketiga tanpa izin Anda. Kami berkomitmen untuk menjaga kerahasiaan informasi Anda sesuai dengan standar keamanan yang berlaku.</p>
     </section>
 
+    <section id="pricing">
+        <h2>Pricing List</h2>
+        <p>Berikut adalah daftar harga jasa pembuatan website kami:</p>
+        <ul>
+            <li><strong>Website Landing Page:</strong> Rp 500.000 - Rp 1.500.000</li>
+            <li><strong>Website Company Profile:</strong> Rp 2.000.000 - Rp 5.000.000</li>
+            <li><strong>Website E-commerce:</strong> Rp 5.000.000 - Rp 15.000.000</li>
+            <li><strong>Website Custom (sesuai kebutuhan):</strong> Mulai Rp 3.000.000</li>
+        </ul>
+        <p>Harga dapat disesuaikan berdasarkan kompleksitas dan fitur tambahan. Hubungi kami untuk konsultasi gratis.</p>
+    </section>
+
+    <section id="cara-order">
+        <h2>Cara Order dan Proses Transaksi</h2>
+        <ol>
+            <li><strong>Konsultasi:</strong> Hubungi kami via WhatsApp atau email untuk diskusi kebutuhan website Anda.</li>
+            <li><strong>Penawaran:</strong> Kami berikan proposal harga dan timeline berdasarkan diskusi.</li>
+            <li><strong>Pembayaran DP:</strong> Bayar 50% di muka untuk memulai pengerjaan.</li>
+            <li><strong>Pengerjaan:</strong> Kami buat desain mockup, lalu develop website. Revisi maksimal 3 kali.</li>
+            <li><strong>Peluncuran:</strong> Website di-deploy dan Anda bayar sisa 50%.</li>
+            <li><strong>Garansi:</strong> Perbaikan bug selama 1 bulan gratis.</li>
+        </ol>
+    </section>
+
+    <section id="metode-pembayaran">
+        <h2>Metode Pembayaran</h2>
+        <p>Kami menerima pembayaran melalui:</p>
+        <ul>
+            <li>Transfer Bank (BRI)</li>
+        </ul>
+        <p>Rekening: BRI - 428701019237531 a/n Adrian Pratama Sasmita</p>
+    </section>
+
+    <section id="order-request">
+        <h2>Order Request</h2>
+        <p>Isi form di bawah untuk request order, lalu kirim ke WhatsApp kami.</p>
+        <form id="orderForm">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="deskripsi">Deskripsi Kebutuhan:</label><br>
+            <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea><br><br>
+            <button type="button" onclick="sendToWA()">Kirim ke WhatsApp</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2025 Adrian Pratama Sasmita. All rights reserved.</p>
     </footer>
+
+<script>
+function sendToWA() {
+    var nama = document.getElementById('nama').value;
+    var email = document.getElementById('email').value;
+    var deskripsi = document.getElementById('deskripsi').value;
+    var text = "Order Request:\nNama: " + nama + "\nEmail: " + email + "\nDeskripsi: " + deskripsi;
+    var url = "https://wa.me/6282118464692?text=" + encodeURIComponent(text);
+    window.open(url, '_blank');
+}
+</script>
+
 </body>
 </html>
